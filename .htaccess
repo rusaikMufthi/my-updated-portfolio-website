@@ -1,0 +1,8 @@
+# .htaccess Configuration for Portfolio Website
+# Created for Rusaick Mufthi's Portfolio
+
+# Enable rewrite engine
+RewriteEngine on
+
+# Custom 404 page - Enhanced configuration
+ErrorDocument 404 /404.html

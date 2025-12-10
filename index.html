@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ===================================== 
+         DOCUMENT META INFORMATION
+         ===================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rusaick Mufthi - Software Engineer specializing in AI and Cybersecurity. Explore my projects, skills, and professional experience.">
+    <meta name="keywords" content="software engineer, AI, artificial intelligence, cybersecurity, portfolio, web development, python, javascript">
+    <meta name="author" content="Rusaick Mufthi">
+    <meta name="robots" content="index, follow">
+
+    <!-- ===================================== 
+         SOCIAL MEDIA & OPEN GRAPH META TAGS
+         ===================================== -->
+    <meta property="og:title" content="Rusaick Mufthi - Software Engineer Portfolio">
+    <meta property="og:description" content="Software Engineering graduate with expertise in AI and Cybersecurity, showcasing projects and professional skills.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rusaikmufthi.github.io/my-portfolio/">
+    <meta property="og:image" content="https://rusaikmufthi.github.io/my-portfolio/assets/My_image.jpg">
+
+    <!-- ===================================== 
+         TWITTER CARD META TAGS
+         ===================================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rusaick Mufthi - Software Engineer Portfolio">
+    <meta name="twitter:description" content="Software Engineering graduate with expertise in AI and Cybersecurity, showcasing projects and professional skills.">
+    <meta name="twitter:image" content="https://rusaikmufthi.github.io/my-portfolio/assets/My_image.jpg">
+
+    <!-- ===================================== 
+         FAVICON & MANIFEST FILES
+         ===================================== -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- ===================================== 
+         SEO & CANONICAL TAGS
+         ===================================== -->
+    <link rel="canonical" href="https://rusaikmufthi.github.io/my-portfolio/">
+
+    <!-- ===================================== 
+         STYLESHEETS
+         ===================================== -->
+    <title>Rusaick Mufthi - Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <!-- ===================================== 
+         WELCOME SCREEN SECTION
+         Displays loading animation and welcome message
+         ===================================== -->
+    <section id="welcome-screen" class="welcome-screen active" aria-label="Welcome">
+        <div class="logo-container">
+            <!-- GitHub Logo Icon -->
+            <div class="logo-item github-logo">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </div>
+
+            <!-- Email/Contact Logo Icon -->
+            <div class="logo-item contact-logo">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+            </div>
+
+            <!-- Code/Script Logo Icon -->
+            <div class="logo-item script-logo">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Welcome Message -->
+        <h1 class="welcome-text">Welcome To My Portfolio Website!</h1>
+
+        <!-- Loading Progress Bar -->
+        <div class="loading-bar" role="progressbar" aria-label="Loading progress">
+            <div class="loading-progress"></div>
+        </div>
+    </section>
+
+    <!-- ===================================== 
+         MAIN CONTENT WRAPPER
+         Contains header, navigation, and all sections
+         ===================================== -->
+    <main id="main-content" class="main-content">
+        <!-- ===================================== 
+             HEADER & NAVIGATION
+             Main navigation bar with brand logo
+             ===================================== -->
+        <header>
+            <nav class="navbar" aria-label="Main navigation">
+                <!-- Brand / Logo Link -->
+                <div class="nav-brand">
+                    <a href="#about" class="brand-link">Rusaick-Mufthi's Portfolio</a>
+                </div>
+
+                <!-- Navigation Menu Links -->
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="#about" class="nav-link active" role="menuitem">About</a></li>
+                    <li role="none"><a href="#education" class="nav-link" role="menuitem">Education</a></li>
+                    <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+                    <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+                    <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ===================================== 
+             MAIN PAGE CONTENT SECTIONS
+             ===================================== -->
+        <main>
+            <!-- ===================================== 
+                 ABOUT SECTION
+                 Personal introduction and profile overview
+                 ===================================== -->
+            <section id="about" class="section about-section">
+                <div class="about-container">
+                    <div class="about-text">
+                        <h2 class="section-title">Mohamed Rusaick Mufthi</h2>
+                        <p class="about-role"><b>I am a</b> <span class="typed-roles" aria-live="polite"></span></p>
+                        <p class="professional-statement">I’m a Software Engineering graduate with a strong focus on Artificial Intelligence and Cybersecurity, passionate about building secure, intelligent, and user-friendly digital solutions. My hands-on experience spans AI model development, full-stack web applications, and UI/UX design, backed by a solid foundation in Python, JavaScript, and database systems such as MySQL and MSSql.</p>
+
+                        <p>I’ve developed impactful projects like an AI-powered Hospital Queue Management System that optimized patient scheduling and reduced waiting times, and a comparative research study that achieved 99.8% accuracy in detecting XSS attacks using machine learning models.</p>
+
+                        <p>As Former President of BCAS IT Society (BITS), I've led a team of 15 members, organized 5 successful tech workshops, and fostered collaboration between students and industry professionals, demonstrating my leadership, teamwork, innovation skills and organizational abilities.</p>
+
+                        <p>I'm seeking roles in AI Engineering or Cybersecurity where I can contribute my technical skills to develop innovative solutions. My goal is to grow into a technical leadership position while continuously expanding my expertise in emerging technologies.</p>
+
+                        <p class="cta-text">I invite you to explore my projects and reach out to discuss how my unique blend of AI, cybersecurity, and development skills can benefit your organization.</p>
+                    </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="assets/My_image.jpg" alt="Rusaick Mufthi - Software Engineer" class="profile-image" loading="lazy" width="300" height="300">
+                    </div>
+                </div>
+                    <a href="assets/My CV - Colombo.pdf" class="btn primary download-cv-btn" download>Download CV</a>
+                </div>
+            </section>
+
+            <!-- ===================================== 
+                 EDUCATION SECTION
+                 Timeline of educational background
+                 ===================================== -->
+            <section id="education" class="section education-section">
+                <div class="education-container">
+                    <h2 class="section-title education-title">Education</h2>
+
+                    <!-- Timeline Container -->
+                    <div class="timeline">
+                        <div class="timeline-line"></div>
+
+                        <!-- Education Entry 1: Certificate -->
+                        <div class="timeline-item left" data-aos="fade-right">
+                            <div class="timeline-content">
+                                <div class="timeline-year">2018</div>
+                                <h3 class="timeline-heading">Certificate in Information Technology</h3>
+                                <p class="timeline-description">
+                                    I completed my Certificate in Information Technology in 2018, where I gained hands-on experience with Microsoft Office tools such as Word, Excel, PowerPoint, and Access. I also explored the basics of HTML and CSS, which sparked my interest in web development. This foundational knowledge set the stage for my journey into the tech world.
+                                </p>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+
+                        <!-- Education Entry 2: O/A Levels -->
+                        <div class="timeline-item right" data-aos="fade-left">
+                            <div class="timeline-content">
+                                <div class="timeline-year">2019 & 2022</div>
+                                <h3 class="timeline-heading">G.C.E. Ordinary Level & Advanced Level (Physical Science Stream)</h3>
+                                <p class="timeline-description">
+                                    I completed my G.C.E. Ordinary Level in 2019 and Advanced Level in 2022, specializing in the Physical Science stream. Through subjects like Physics, ICT, and Mathematics, I strengthened my analytical and logical thinking skills, which play a crucial role in my current software development studies.
+                                </p>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+
+                        <!-- Education Entry 3: BTEC HND -->
+                        <div class="timeline-item left" data-aos="fade-right">
+                            <div class="timeline-content">
+                                <div class="timeline-year">2024 – 2025</div>
+                                <h3 class="timeline-heading">BTEC HND in Software Engineering</h3>
+                                <p class="timeline-description">
+                                    Successfully completed my Pearson BTEC Higher National Diploma in Software Engineering, gaining comprehensive practical skills in programming, web development, networking, database management, cybersecurity, and software engineering methodologies. The program provided hands-on experience in building robust software solutions and implementing industry-standard development practices.
+
+                                    Concurrently with my studies, I actively contributed to the academic community through leadership roles in the BCAS IT Society (BITS). I served as Treasurer in 2024, managing financial planning and budgeting for society initiatives, and was elected President in 2025, where I led a team of 15 members in organizing 5+ successful tech workshops and events. These experiences significantly enhanced my leadership capabilities, teamwork, and organizational management skills while fostering collaboration between students and industry professionals.
+                                </p>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===================================== 
+                 SKILLS SECTION
+                 Categorized technical and soft skills
+                 ===================================== -->
+            <section id="skills" class="section skills-section">
+                <div class="skills-container">
+                    <h2 class="section-title skills-title">My Skills</h2>
+                    <p class="skills-subtitle">Technologies and expertise I bring to the table</p>
+
+                    <!-- Skills Grid -->
+                    <div class="skills-grid">
+                        <!-- Programming Skills Category -->
+                        <div class="skill-category" data-category="programming">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="16 18 22 12 16 6"></polyline>
+                                        <polyline points="8 6 2 12 8 18"></polyline>
+                                    </svg>
+                                </div>
+                                <h3 class="category-title">Programming</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">Python</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="90"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- AI/ML Skills Category -->
+                        <div class="skill-category" data-category="ai-ml">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                        <path d="M12 1v6m0 6v6m5.2-14.2l-4.2 4.2m0 6l4.2 4.2M23 12h-6m-6 0H5m14.2 5.2l-4.2-4.2m0-6l4.2-4.2"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="category-title">AI/ML</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">Machine Learning</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="85"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Data Analytics</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="80"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Generative AI</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="75"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Web Development Skills Category -->
+                        <div class="skill-category" data-category="web-dev">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                                    </svg>
+                                </div>
+                                <h3 class="category-title">Web Development</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">HTML</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="95"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Streamlit</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="85"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">SQLite</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="80"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Soft Skills Category -->
+                        <div class="skill-category" data-category="soft-skills">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="category-title">Soft Skills</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">Presentation</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="90"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Research</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="88"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Analytical</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="85"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Treasury Management</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="82"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Leadership</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="87"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Languages Category -->
+                        <div class="skill-category" data-category="languages">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="category-title">Languages</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">English</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="95"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Tamil</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===================================== 
+                 PROJECTS SECTION
+                 Showcase of completed projects
+                 ===================================== -->
+            <section id="projects" class="section projects-section">
+                <div class="projects-container">
+                    <h2 class="section-title projects-title">My Projects</h2>
+                    <p class="projects-subtitle">Innovative solutions I've built</p>
+
+                    <!-- Projects Grid -->
+                    <div class="projects-grid">
+                        <!-- Project 1: Passenger Data Analysis -->
+                        <div class="project-card" data-project="data-analysis">
+                            <div class="project-icon-wrapper">
+                                <div class="project-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Passenger Data Analysis Platform</h3>
+                                <p class="project-description">
+                                    A comprehensive data analysis project that processes and visualizes passenger data to extract meaningful insights. Utilized Python, pandas, and data visualization libraries to identify patterns and trends in passenger behavior.
+                                </p>
+                                <!-- Technology Tags -->
+                                <div class="project-tags">
+                                    <span class="project-tag">Python</span>
+                                    <span class="project-tag">Data Analytics</span>
+                                    <span class="project-tag">Pandas</span>
+                                    <span class="project-tag">Visualization</span>
+                                </div>
+                                <!-- GitHub Link -->
+                                <div class="github-link-wrapper">
+                                    <a href="https://github.com/rusaikMufthi/Passenger-Data-Analysis-Platform.git" class="github-link" target="_blank" aria-label="View Passenger Data Analysis on GitHub">
+                                        <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                        <span>View on GitHub</span>
+                                        <div class="tech-animation">
+                                            <div class="data-node node-1"></div>
+                                            <div class="data-node node-2"></div>
+                                            <div class="data-node node-3"></div>
+                                            <div class="data-node node-4"></div>
+                                            <div class="data-node node-5"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <p>View Details</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2: UI/UX Design -->
+                        <div class="project-card" data-project="ui-ux">
+                            <div class="project-icon-wrapper">
+                                <div class="project-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <line x1="9" y1="3" x2="9" y2="21"></line>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">UI/UX Design for People's Link Bank</h3>
+                                <p class="project-description">
+                                    Designed a modern, user-friendly interface for People's Link Bank's digital banking platform. Focused on creating an intuitive user experience with clean layouts, accessible navigation, and responsive design principles.
+                                </p>
+                                <!-- Technology Tags -->
+                                <div class="project-tags">
+                                    <span class="project-tag">UI/UX</span>
+                                    <span class="project-tag">Design</span>
+                                    <span class="project-tag">Figma</span>
+                                    <span class="project-tag">Prototyping</span>
+                                </div>
+                                <!-- GitHub Link -->
+                                <div class="github-link-wrapper">
+                                    <a href="https://github.com/rusaikMufthi/UI-UX-Design-for-People-s-Link-Bank.git" class="github-link" target="_blank" aria-label="View Bank UI/UX Design on GitHub">
+                                        <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                        <span>View on GitHub</span>
+                                        <div class="tech-animation">
+                                            <div class="data-node node-1"></div>
+                                            <div class="data-node node-2"></div>
+                                            <div class="data-node node-3"></div>
+                                            <div class="data-node node-4"></div>
+                                            <div class="data-node node-5"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <p>View Details</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3: XSS Attack Detector -->
+                        <div class="project-card" data-project="security">
+                            <div class="project-icon-wrapper">
+                                <div class="project-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">AI-Powered XSS Attack Detection in Web Application</h3>
+                                <p class="project-description">
+                                    A comparative research project that leverages machine learning to identify Cross-Site Scripting (XSS) threats. After evaluating multiple models, an XGBoost classifier was optimized to achieve a 99.81% accuracy rate in detection. The project was successfully deployed as a functional web application using Streamlit to demonstrate real-time threat analysis.
+                                </p>
+                                <!-- Technology Tags -->
+                                <div class="project-tags">
+                                    <span class="project-tag">Cybersecurity</span>
+                                    <span class="project-tag">Machine Learning</span>
+                                    <span class="project-tag">Python</span>
+                                    <span class="project-tag">Streamlit</span>
+                                    <span class="project-tag">XSS</span>
+                                </div>
+                                <!-- GitHub Link -->
+                                <div class="github-link-wrapper">
+                                    <a href="https://github.com/rusaikMufthi/AI-Powered-XSS-Attack-Detection-in-Web-Application.git" class="github-link" target="_blank" aria-label="View XSS Attack Detector on GitHub">
+                                        <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                        <span>View on GitHub</span>
+                                        <div class="tech-animation">
+                                            <div class="data-node node-1"></div>
+                                            <div class="data-node node-2"></div>
+                                            <div class="data-node node-3"></div>
+                                            <div class="data-node node-4"></div>
+                                            <div class="data-node node-5"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <p>View Details</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 4: Hospital Booking System -->
+                        <div class="project-card" data-project="web-app">
+                            <div class="project-icon-wrapper">
+                                <div class="project-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">AI-Powered Hospital Queue Management</h3>
+                                <p class="project-description">
+                                    Developed a full-stack web application that uses a Machine Learning model (Decision Tree Regressor) to predict patient consultation times with 91.5% accuracy. The system optimizes appointment scheduling to significantly reduce wait times, featuring a clean interface built with Streamlit and SQLite.
+                                </p>
+                                <!-- Technology Tags -->
+                                <div class="project-tags">
+                                    <span class="project-tag">Machine Learning</span>
+                                    <span class="project-tag">Python</span>
+                                    <span class="project-tag">SQLite</span>
+                                    <span class="project-tag">Streamlit</span>
+                                </div>
+                                <!-- GitHub Link -->
+                                <div class="github-link-wrapper">
+                                    <a href="https://github.com/rusaikMufthi/AI-Powered-Hospital-Booking-System" class="github-link" target="_blank" aria-label="View Hospital Booking System on GitHub">
+                                        <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                        <span>View on GitHub</span>
+                                        <div class="tech-animation">
+                                            <div class="data-node node-1"></div>
+                                            <div class="data-node node-2"></div>
+                                            <div class="data-node node-3"></div>
+                                            <div class="data-node node-4"></div>
+                                            <div class="data-node node-5"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <p>View Details</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===================================== 
+                 CONTACT SECTION
+                 Contact form and social links
+                 ===================================== -->
+            <section id="contact" class="section contact-section">
+                <div class="contact-container">
+                    <!-- Contact Visual Animation -->
+                    <div class="contact-visual">
+                        <svg class="circuit-svg" viewBox="0 0 500 400" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="circuitGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#00d4ff"/>
+                                    <stop offset="100%" stop-color="#7b2ff7"/>
+                                </linearGradient>
+                                <filter id="softGlow">
+                                    <feGaussianBlur stdDeviation="3" result="blur"/>
+                                    <feMerge>
+                                        <feMergeNode in="blur"/>
+                                        <feMergeNode in="SourceGraphic"/>
+                                    </feMerge>
+                                </filter>
+                            </defs>
+                            <!-- Nodes -->
+                            <g class="nodes" stroke="url(#circuitGlow)" filter="url(#softGlow)">
+                                <circle cx="60" cy="60" r="4"/>
+                                <circle cx="150" cy="100" r="4"/>
+                                <circle cx="240" cy="60" r="4"/>
+                                <circle cx="340" cy="120" r="4"/>
+                                <circle cx="440" cy="60" r="4"/>
+                                <circle cx="100" cy="200" r="4"/>
+                                <circle cx="220" cy="220" r="4"/>
+                                <circle cx="320" cy="220" r="4"/>
+                                <circle cx="420" cy="220" r="4"/>
+                                <circle cx="160" cy="320" r="4"/>
+                                <circle cx="260" cy="320" r="4"/>
+                                <circle cx="360" cy="320" r="4"/>
+                            </g>
+                            <!-- Wires -->
+                            <g class="wires" fill="none" stroke="url(#circuitGlow)" stroke-width="2" stroke-linecap="round">
+                                <path class="wire" d="M60 60 L150 100 L240 60 L340 120 L440 60"/>
+                                <path class="wire" d="M100 200 L150 100"/>
+                                <path class="wire" d="M100 200 L220 220 L320 220 L420 220"/>
+                                <path class="wire" d="M160 320 L220 220"/>
+                                <path class="wire" d="M260 320 L320 220"/>
+                                <path class="wire" d="M360 320 L420 220"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-content">
+                        <h2 class="section-title contact-title">Get In Touch</h2>
+                        <p class="contact-subtitle">Have a project or idea? Let's build something great.</p>
+
+                        <!-- Contact Form -->
+                        <form class="contact-form" id="contact-form" novalidate>
+                            <!-- Name & Email Row -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                                </div>
+                            </div>
+
+                            <!-- Message Text Area -->
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+
+                            <!-- Form Action Buttons -->
+                            <div class="form-actions">
+                                <button type="submit" class="btn primary">Send Message</button>
+                                <a href="mailto:rusaikmufthi@gmail.com" class="btn ghost" aria-label="Email me directly">Email Directly</a>
+                            </div>
+                        </form>
+
+                        <!-- Social Media Links -->
+                        <div class="contact-social">
+                            <!-- GitHub Link -->
+                            <a class="social-link" href="https://github.com/rusaikMufthi" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12a12 12 0 008.21 11.39c.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.66-.31-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23A11.5 11.5 0 0112 5.6c1.02.01 2.05.14 3.01.41 2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.86.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.69.8.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </a>
+
+                            <!-- LinkedIn Link -->
+                            <a class="social-link" href="https://www.linkedin.com/in/rusaick-mufthi" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.77 2.65 4.77 6.1V24h-4v-7.1c0-1.7-.03-3.88-2.37-3.88-2.38 0-2.75 1.85-2.75 3.76V24h-4V8z"/></svg>
+                            </a>
+
+                            <!-- WhatsApp Link -->
+                            <a class="social-link" href="https://wa.me/94754720047" aria-label="WhatsApp" target="_blank">
+                                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                                    <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893-.001-3.189-1.248-6.189-3.515-8.453"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ===================================== 
+             FOOTER
+             Copyright and site information
+             ===================================== -->
+        <footer class="footer-bar" aria-label="Footer">
+            <div class="footer-inner">
+                <span class="footer-text">© 2025 Rusaick-Mufthi · All Rights Reserved</span>
+            </div>
+        </footer>
+    </main>
+
+    <!-- ===================================== 
+         SCRIPTS
+         ===================================== -->
+    <script src="script.js"></script>
+</body>
+
+</html>

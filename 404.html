@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+    <title>404 · Page Not Found — Rusaick Mufthi</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Inline minimal dark-tech styles to ensure this page looks correct standalone -->
+    <style>
+        :root{
+            --bg:#06070b;
+            --panel:#0f1724;
+            --muted:#9aa4b2;
+            --accent:#00e6ff;
+            --accent-2:#7b2ff7;
+            --glow:0 6px 30px rgba(11,189,255,0.07);
+        }
+        html,body{height:100%;}
+        body{
+            margin:0;
+            font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+            background:radial-gradient(1200px 800px at 10% 10%, rgba(11,189,255,0.03), transparent),
+                       linear-gradient(180deg, var(--bg) 0%, #071024 100%);
+            color:#e6eef6;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            display:flex;
+            flex-direction:column;
+            min-height:100vh;
+        }
+        /* Header */
+        header .navbar{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;background:transparent}
+        .brand-link{color:var(--muted);text-decoration:none;font-weight:600}
+        .nav-menu{list-style:none;display:flex;gap:12px;margin:0;padding:0}
+        .nav-menu a{color:var(--muted);text-decoration:none;padding:8px;border-radius:6px}
+        .nav-menu a:hover{color:var(--accent);background:rgba(0,230,255,0.03)}
+
+        main{flex:1;display:flex;align-items:center;justify-content:center;padding:40px}
+
+        /* Central panel */
+        .panel{
+            width:100%;max-width:1100px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+            border:1px solid rgba(255,255,255,0.03);box-shadow:var(--glow);border-radius:12px;padding:36px;position:relative;overflow:hidden;
+            display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center
+        }
+
+        /* Left column */
+        .left{
+            padding-right:6px
+        }
+        .code{
+            font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace;
+            font-size:110px;
+            font-weight:700;
+            line-height:1;
+            /* visible gradient fill with fallback */
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent; /* shows gradient in WebKit/Blink */
+            color: var(--accent); /* fallback for browsers that don't support background-clip:text */
+            text-shadow: 0 4px 28px rgba(0,230,255,0.12), 0 0 6px rgba(123,47,247,0.04);
+            -webkit-text-stroke:0.6px rgba(255,255,255,0.02);
+            display:inline-block;margin:0;
+        }
+        .title{font-size:26px;margin:8px 0;color:#dfeefd}
+        .desc{color:var(--muted);margin:14px 0 24px;max-width:62ch}
+
+        /* Buttons */
+        .actions{display:flex;gap:12px;flex-wrap:wrap}
+        .btn{
+            display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);text-decoration:none;color:var(--muted);background:transparent;font-weight:600;font-size:14px
+        }
+        .btn--primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#041123;border:none;box-shadow:0 8px 30px rgba(11,189,255,0.09)}
+        .btn:focus{outline:2px solid rgba(0,230,255,0.12);outline-offset:2px}
+
+        /* Right column – tech visualization */
+        .viz{display:flex;align-items:center;justify-content:center;height:100%}
+        .circuit-svg{width:100%;max-width:380px;height:auto;filter:drop-shadow(0 10px 30px rgba(0,0,0,0.6))}
+
+        /* Subtle animated connector dots */
+        .dot{fill:var(--accent);opacity:0.9}
+        .wire{stroke:rgba(0,230,255,0.14);stroke-width:2;stroke-linecap:round}
+        .pulse{animation:pulse 2.2s infinite}
+        @keyframes pulse{0%{opacity:0.05;transform:scale(0.9)}50%{opacity:1;transform:scale(1.05)}100%{opacity:0.05;transform:scale(0.9)}}
+
+        /* Footer */
+        footer{padding:18px 28px;color:var(--muted);font-size:13px;text-align:center}
+
+        /* Responsive */
+        @media (max-width:900px){
+            .panel{grid-template-columns:1fr;}
+            .code{font-size:86px}
+            .viz{margin-top:8px}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">Rusaick-Mufthi</a>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="panel" role="main" aria-labelledby="error-title">
+            <div class="left">
+                <div style="display:flex;align-items:center;gap:18px">
+                    <div class="code" aria-hidden="true">404</div>
+                    <div>
+                        <h1 id="error-title" class="title">Page not found</h1>
+                        <p class="desc">We can't find the page you were looking for. It may have moved or doesn't exist. Try returning to the homepage or explore other sections of the site.</p>
+                    </div>
+                </div>
+
+                <div class="actions" style="margin-top:18px">
+                    <a class="btn btn--primary" href="index.html" aria-label="Return to homepage">Return Home</a>
+                    <a class="btn" href="index.html#contact">Contact</a>
+                </div>
+
+                <p style="color:var(--muted);margin-top:22px;font-size:13px">Tip: If you typed the URL, make sure it's spelled correctly.</p>
+            </div>
+
+            <div class="viz" aria-hidden="true">
+                <!-- Tech-themed SVG (circuit-like) with subtle animated dots -->
+                <svg class="circuit-svg" viewBox="0 0 500 400" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#00e6ff" stop-opacity="0.9" />
+                            <stop offset="100%" stop-color="#7b2ff7" stop-opacity="0.9" />
+                        </linearGradient>
+                    </defs>
+                    <!-- wires -->
+                    <g fill="none" stroke="url(#g1)" stroke-width="1.6" opacity="0.18">
+                        <path class="wire" d="M40 60 L140 100 L240 60 L340 120 L460 80" />
+                        <path class="wire" d="M80 200 L140 100" />
+                        <path class="wire" d="M80 200 L220 220 L320 220 L420 220" />
+                        <path class="wire" d="M160 320 L220 220" />
+                        <path class="wire" d="M260 320 L320 220" />
+                    </g>
+
+                    <!-- nodes (some pulsing) -->
+                    <g>
+                        <circle class="dot pulse" cx="140" cy="100" r="5" />
+                        <circle class="dot" cx="240" cy="60" r="4" style="opacity:0.6" />
+                        <circle class="dot pulse" cx="340" cy="120" r="5" />
+                        <circle class="dot" cx="220" cy="220" r="4" />
+                        <circle class="dot pulse" cx="320" cy="220" r="5" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">© 2025 Rusaick Mufthi · All Rights Reserved</div>
+    </footer>
+
+    <script>
+        // Small enhancement: send users back if they came from this site
+        (function(){
+            const back = document.querySelector('.btn--primary');
+            if(!back) return;
+            back.addEventListener('click', function(e){
+                // let the link work normally; this is a placeholder if more logic is desired
+            });
+        })();
+    </script>
+</body>
+</html>

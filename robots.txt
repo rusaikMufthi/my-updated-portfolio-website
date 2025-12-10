@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /assets/private/
+Disallow: /admin/
+Disallow: /temp/
+
+# Sitemap location
+Sitemap: https://rusaikmufthi.github.io/my-portfolio/sitemap.xml
